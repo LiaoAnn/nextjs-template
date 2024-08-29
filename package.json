@@ -1,9 +1,9 @@
 {
-  "name": "geolocation-with-nextjs-and-cf-pages",
+  "name": "nextjs-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
