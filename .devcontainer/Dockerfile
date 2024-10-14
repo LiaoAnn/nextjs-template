@@ -15,4 +15,3 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 # Install pnpm
 RUN npm install -g pnpm
-RUN pnpm config set store-dir ~/pnpm
