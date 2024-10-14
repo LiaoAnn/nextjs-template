@@ -75,6 +75,7 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        noto: ["Noto Sans TC", "sans-serif"],
       },
     },
   },

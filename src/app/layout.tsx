@@ -4,8 +4,10 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
+  weight: "variable",
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,8 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          "min-h-screen bg-background antialiased",
+          process.env.NODE_ENV === "production"
+            ? fontSans.className
+            : "font-noto"
         )}
       >
         {children}
